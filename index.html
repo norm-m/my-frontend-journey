@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой первый сайт</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <body>
+    <header>
+      <h1>Моя первая статья</h1>
+      <a href="https://github.com" class="btn"> Мой будущий GitHub</a>
+    </header>
+    <br /><br />
+
+    <div style="text-align: center; margin-bottom: 20px">
+      <input type="text" id="name-input" placeholder="Введите имя..." />
+      <button id="change-name-btn" class="btn">Изменить имя</button>
+      <button id="alarm-btn" class="btn">Красная тревога</button>
+    </div>
+    <div class="counter-box" style="text-align: center; margin-bottom: 30px">
+      <h1 id="counter-display">0</h1>
+      <button id="btn-plus" class="btn">+1</button>
+      <button id="btn-minus" class="btn">-1</button>
+      <button id="btn-reset" class="btn">Сброс</button>
+    </div>
+    <main>
+      <div class="cards-container" id="cards-container">
+        <!-- Карточки генерируются автоматически из JS -->
+      </div>
+    </main>
+
+    <footer id="copyright">
+      <p>Создано в 2026 году</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

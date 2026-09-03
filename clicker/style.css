@@ -1,0 +1,7 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.error {
+  border: 2px solid red;
+}

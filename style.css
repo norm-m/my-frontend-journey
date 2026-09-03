@@ -1,0 +1,84 @@
+:root {
+  --main-color: #2ea44f; /* Тот самый фирменный зеленый */
+}
+h1 {
+  color: red;
+}
+.highlight {
+  color: blue;
+  font-size: 24px;
+}
+#copyright {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+li:hover {
+  color: red;
+  cursor: pointer;
+}
+.btn {
+  text-decoration: none; /* Убивает уродливое подчеркивание */
+  background-color: var(--main-color); /* Фирменный зеленый цвет GitHub */
+  color: white;
+  padding: 10px 20px; /* 10px сверху/снизу, 20px по бокам */
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #238636; /* Более темный зеленый */
+  padding: 10px 40px; /* Раздвигаем кнопку в ширину! */
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрирует по вертикали */
+  min-height: 100vh; /* Растягивает body на 100% высоты экрана (Viewport Height) */
+  flex-direction: column; /* Меняем направление на колонку */
+  gap: 50px; /* Добавляем воздух между шапкой, карточкой и подвалом */
+  font-family: 'Montserrat', sans-serif;
+}
+.btn:hover {
+  background-color: black; /* Можешь написать любой цвет */
+}
+@media (max-width: 600px) {
+  .card {
+    background-color: lightblue;
+    border-radius: 0;
+  }
+}
+.cards-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.badge {
+  position: absolute;
+  top: 10px; /* Прижимаем к потолку карточки */
+  right: 10px; /* Прижимаем к правому краю карточки */
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
